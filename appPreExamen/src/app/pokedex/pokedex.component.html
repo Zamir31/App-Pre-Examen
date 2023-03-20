@@ -1,0 +1,5 @@
+<h1>Tenemos un total de {{conteo}} pokemons</h1>
+
+<div *ngIf="resumenPokes">
+    <app-pokemon *ngFor="let poke of resumenPokes" [poke]="poke"></app-pokemon>
+</div>
